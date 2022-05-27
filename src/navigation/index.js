@@ -5,16 +5,16 @@ import { home, surah, book } from '../pages'
 
 const Stack = createNativeStackNavigator()
 
-const Router = () => {
+const AppStack = () => {
     return (
         <NavigationContainer>
             <Stack.Navigator initialRouteName="Home">
                 <Stack.Screen name="Home" component={home} />
                 <Stack.Screen name="Surah" component={surah} />
-                <Stack.Screen name="book" component={book} />
+                <Stack.Screen name="Book" component={book} />
             </Stack.Navigator>
         </NavigationContainer>
     )
 }
 
-export default Router;
+export default AppStack;

@@ -1,16 +1,15 @@
 import React from 'react'
 import { View, Text, Button } from 'react-native'
-import { NavigationContainer, useNavigationContainerRef } from '@react-navigation/native'
 import { useNavigation } from '@react-navigation/native'
 
-const Home = ({ navigation: { navigate } }) => {
+const Home = () => {
   const navigation = useNavigation()
 
   return (
     <View>
       <Text>Home Page</Text>
-      <Button onPress={() => navigate('Surah')} title="Go Surah" />
-      <Button title="Homes" onPress={() => navigate('Profile')} />
+      <Button onPress={() => navigation.push('Surah')} title="Surah" />
+      <Button onPress={() => navigation.push('Book')} title="Book"  />
     </View>
   )
 }
