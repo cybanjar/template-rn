@@ -8,9 +8,17 @@ const Stack = createNativeStackNavigator()
 const AppStack = () => {
     return (
         <NavigationContainer>
-            <Stack.Navigator initialRouteName="Home">
-                <Stack.Screen name="Home" component={home} />
-                <Stack.Screen name="Surah" component={surah} />
+            <Stack.Navigator 
+                initialRouteName="Home" 
+                screenOptions={{ animationEnabled: false }} 
+                detachInactiveScreens="false" >
+                <Stack.Screen 
+                    options={{ headerShown: false }} 
+                    name="Home" component={home} />
+                <Stack.Screen 
+                    name="Surah" 
+                    component={surah}
+                    headerStyle={{ backgroundColor: 'red'}} />
                 <Stack.Screen name="Book" component={book} />
             </Stack.Navigator>
         </NavigationContainer>
