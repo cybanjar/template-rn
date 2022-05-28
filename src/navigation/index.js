@@ -13,13 +13,17 @@ const AppStack = () => {
                 screenOptions={{ animationEnabled: false }} 
                 detachInactiveScreens="false" >
                 <Stack.Screen 
-                    options={{ headerShown: false }} 
-                    name="Home" component={home} />
+                    name="Home" 
+                    component={home} 
+                    options={{ headerShown: false }} />
                 <Stack.Screen 
                     name="Surah" 
                     component={surah}
-                    headerStyle={{ backgroundColor: 'red'}} />
-                <Stack.Screen name="Book" component={book} />
+                    options={{ headerShown: false }} />
+                <Stack.Screen 
+                    name="Book" 
+                    component={book} 
+                    options={{ headerShown: false }} />
             </Stack.Navigator>
         </NavigationContainer>
     )

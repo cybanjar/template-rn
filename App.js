@@ -1,7 +1,7 @@
 import React from 'react'
 import AppStack from './src/navigation'
 import {Provider} from 'react-redux'
-import store from './src/redux/store'
+import store from './src/store'
 
 const App = () => {
 	return (
