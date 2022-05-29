@@ -2,6 +2,9 @@
 import { StyleSheet } from 'react-native'
 
 module.exports = StyleSheet.create({
+    container: {
+      margin: 20
+    },
     fontMedium: {
       fontSize: 16,
       fontWeight: '600',
